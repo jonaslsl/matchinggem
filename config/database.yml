@@ -27,20 +27,20 @@ default: &default
 
 development:
   <<: *default
-  database: matilha
+  database: matchpoc
 
 test:
   <<: *default
-  database: matilha_test
+  database: matchpoc_test
 
 staging:
   <<: *default
-  database: matilha_staging
-  username: matilha
-  password: <%= ENV['MATILHA_DB_PASS'] %>
+  database: matchpoc_staging
+  username: matchpoc
+  password: <%= ENV['matchpoc_DB_PASS'] %>
 
 production:
   <<: *default
-  database: matilha_production
-  username: matilha
-  password: <%= ENV['MATILHA_DB_PASS'] %>
+  database: matchpoc_production
+  username: matchpoc
+  password: <%= ENV['matchpoc_DB_PASS'] %>
