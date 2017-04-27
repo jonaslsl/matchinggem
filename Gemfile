@@ -45,7 +45,7 @@ gem 'meta_request'
 gem 'peek'
 
 # Devise is a flexible authentication solution for Rails based on Warden
-gem 'devise'
+# gem 'devise'
 
 gem 'bootstrap-sass'
 gem 'active_bootstrap_skin'
