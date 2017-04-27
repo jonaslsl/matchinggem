@@ -1,0 +1,1 @@
+json.partial! "match_categories/match_category", match_category: @match_category
