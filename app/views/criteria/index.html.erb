@@ -21,7 +21,7 @@
     <tbody>
       <%= content_tag_for(:tr, @criteria) do |criterium| %>
             <td><%= criterium.name %></td>
-            <td><%= criterium.category %></td>
+            <td><%= criterium.category.name %></td>
             <td><%= link_to 'Show', criterium %></td>
         <td><%= link_to 'Edit', edit_criterium_path(criterium) %></td>
         <td><%= link_to 'Destroy', criterium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
