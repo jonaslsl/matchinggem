@@ -1,1 +1,0 @@
-json.partial! "match_criteria/match_criterium", match_criterium: @match_criterium

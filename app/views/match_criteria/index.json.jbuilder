@@ -1,1 +1,0 @@
-json.array! @match_criteria, partial: 'match_criteria/match_criterium', as: :match_criterium
