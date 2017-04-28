@@ -1,0 +1,31 @@
+<div class="page-header">
+  <%= link_to new_criterium_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Criterium
+  <% end %>
+  <h1>Listing criteria</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @criteria) do |criterium| %>
+            <td><%= criterium.name %></td>
+            <td><%= criterium.category %></td>
+            <td><%= link_to 'Show', criterium %></td>
+        <td><%= link_to 'Edit', edit_criterium_path(criterium) %></td>
+        <td><%= link_to 'Destroy', criterium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
